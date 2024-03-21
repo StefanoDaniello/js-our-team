@@ -80,21 +80,25 @@ const button=document.querySelector('.btn-success').addEventListener('click',fun
     const nome=document.getElementById('nome').value
     const ruolo=document.getElementById('profession').value
     const foto=document.getElementById('select').value
-
-    let newteam={
-        foto : foto,
-        nome: nome,
-        ruolo : ruolo
-        
+    const errore=document.querySelector('.errore')
+    if(isNaN(nome) && isNaN(ruolo)){
+        let newteam={
+            foto : foto,
+            nome: nome,
+            ruolo : ruolo
+        }
+        team.push(newteam)
+        const stcontainer=document.querySelector('.st-container')
+        let boxes=document.createElement('div')
+        boxes.classList.add('box')
+        boxes.innerHTML=`
+        <img src="${newteam.foto}" class="foto">
+        <h3>${newteam.nome}</h3>  <p>${newteam.ruolo}</p>
+        `
+        stcontainer.appendChild(boxes)
+    }else{
+        errore.innerHTML='Errore!'
     }
-    team.push(newteam)
-    const stcontainer=document.querySelector('.st-container')
-    let boxes=document.createElement('div')
-    boxes.classList.add('box')
-    boxes.innerHTML=`
-    <img src="${newteam.foto}" class="foto">
-    <h3>${newteam.nome}</h3>  <p>${newteam.ruolo}</p>
-    `
-    stcontainer.appendChild(boxes)
+   
 
 })
