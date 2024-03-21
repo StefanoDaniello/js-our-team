@@ -65,8 +65,6 @@ for(let value of team){
  boxes.innerHTML=`
  <img src="img/wayne-barnett-founder-ceo.jpg" class="foto">
     ${value.nome} <br> ${value.ruolo}
- 
  `
  stcontainer.appendChild(boxes)
 }
-
