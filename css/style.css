@@ -12,6 +12,10 @@
     width: 1200px;
     margin: 0 auto;
 }
+.st-container2{
+    width: 1200px;
+    margin: 0 auto;
+}
 .box{
     width: calc(100% / 3 - 20px);
     margin: 10px;

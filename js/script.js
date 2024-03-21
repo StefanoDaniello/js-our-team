@@ -41,7 +41,7 @@ let team=[
         ruolo : ' Chief Editor'
     },  
     {
-        foto: 'img/ walter-gordon-office-manager.jpg',
+        foto: 'img/walter-gordon-office-manager.jpg',
         nome : 'Walter Gordon',
         ruolo : 'Office Manager'
     },
@@ -70,7 +70,31 @@ for(let value of team){
  boxes.classList.add('box')
  boxes.innerHTML=`
  <img src="${value.foto}" class="foto">
- <br> ${value.nome} <br> ${value.ruolo}
+  <h3>${value.nome}</h3>  <p>${value.ruolo}</p>
  `
  stcontainer.appendChild(boxes)
 }
+
+
+const button=document.querySelector('.btn-success').addEventListener('click',function(){
+    const nome=document.getElementById('nome').value
+    const ruolo=document.getElementById('profession').value
+    const foto=document.getElementById('select').value
+
+    let newteam={
+        foto : foto,
+        nome: nome,
+        ruolo : ruolo
+        
+    }
+    team.push(newteam)
+    const stcontainer=document.querySelector('.st-container')
+    let boxes=document.createElement('div')
+    boxes.classList.add('box')
+    boxes.innerHTML=`
+    <img src="${newteam.foto}" class="foto">
+    <h3>${newteam.nome}</h3>  <p>${newteam.ruolo}</p>
+    `
+    stcontainer.appendChild(boxes)
+
+})
