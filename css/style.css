@@ -9,3 +9,14 @@
     width: 1200px;
     margin: 0 auto;
 }
+.box{
+    width: calc(100% / 3 - 50px);
+    margin: 20px;
+}
+
+.foto{
+    width: 100%;
+}
+.text{
+    height: 100px;
+}

@@ -18,7 +18,7 @@ Permettere l'aggiunta di un nuovo membro del team
 Consigli del giorno:
 Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
- E ricordiamoci che console.log() è nostro amico!
+E ricordiamoci che console.log() è nostro amico!
 Buon lavoro! :muscolo:
 DATI PER ESERCIZIO
 Wayne Barnett	Founder & CEO	        wayne-barnett-founder-ceo.jpg
@@ -28,3 +28,49 @@ Angela Lopez	        Social Media Manager	angela-lopez-social-media-manager.jpg
 Scott Estrada	        Developer	                 scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	         barbara-ramos-graphic-designer.jpg
 */
+
+let team=[
+    {
+        foto :  'wayne-barnett-founder-ceo.jpg',
+        nome : 'Wayne Barnett',
+        ruolo : 'Founder & CEO'
+    },
+    {
+        foto :  'wayne-barnett-founder-ceo.jpg',
+        nome : 'Wayne Barnett',
+        ruolo : 'Founder & CEO'
+    },  
+    {
+        foto :  'wayne-barnett-founder-ceo.jpg',
+        nome : 'Wayne Barnett',
+        ruolo : 'Founder & CEO'
+    },
+    {
+        foto :  'wayne-barnett-founder-ceo.jpg',
+        nome : 'Wayne Barnett',
+        ruolo : 'Founder & CEO'
+    },
+    {
+        foto :  'wayne-barnett-founder-ceo.jpg',
+        nome : 'Wayne Barnett',
+        ruolo : 'Founder & CEO'
+    },
+    {
+        foto :  'wayne-barnett-founder-ceo.jpg',
+        nome : 'Wayne Barnett',
+        ruolo : 'Founder & CEO'
+    }
+
+];
+
+
+const stcontainer=document.querySelector('.st-container')
+for(let value of team){
+ let boxes=document.createElement('div')
+ boxes.classList.add('box')
+ boxes.innerHTML=`
+ ${value.foto} <br> ${value.nome} <br> ${value.ruolo}
+ `
+ stcontainer.appendChild(boxes)
+}
+
