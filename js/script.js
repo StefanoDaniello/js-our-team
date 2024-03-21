@@ -31,26 +31,32 @@ Barbara Ramos	Graphic Designer	         barbara-ramos-graphic-designer.jpg
 
 let team=[
     {
+        foto: './img/wayne-barnett-founder-ceo.jpg',
         nome : 'Wayne Barnett',
         ruolo : 'Founder & CEO'
     },
     {
+        foto: './img/wayne-barnett-founder-ceo.jpg',
         nome : 'Wayne Barnett',
         ruolo : 'Founder & CEO'
     },  
     {
+        foto: './img/wayne-barnett-founder-ceo.jpg',
         nome : 'Wayne Barnett',
         ruolo : 'Founder & CEO'
     },
     {
+        foto: './img/wayne-barnett-founder-ceo.jpg',
         nome : 'Wayne Barnett',
         ruolo : 'Founder & CEO'
     },
     {
+        foto: './img/wayne-barnett-founder-ceo.jpg',
         nome : 'Wayne Barnett',
         ruolo : 'Founder & CEO'
     },
     {
+        foto: './img/wayne-barnett-founder-ceo.jpg',
         nome : 'Wayne Barnett',
         ruolo : 'Founder & CEO'
     }
@@ -63,8 +69,7 @@ for(let value of team){
  let boxes=document.createElement('div')
  boxes.classList.add('box')
  boxes.innerHTML=`
- <img src="img/wayne-barnett-founder-ceo.jpg" class="foto">
-    ${value.nome} <br> ${value.ruolo}
+${value.foto} <br> ${value.nome} <br> ${value.ruolo}
  `
  stcontainer.appendChild(boxes)
 }
