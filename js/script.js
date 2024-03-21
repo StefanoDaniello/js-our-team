@@ -96,9 +96,8 @@ const button=document.querySelector('.btn-success').addEventListener('click',fun
         <h3>${newteam.nome}</h3>  <p>${newteam.ruolo}</p>
         `
         stcontainer.appendChild(boxes)
+        errore.innerHTML=''
     }else{
         errore.innerHTML='Errore!'
     }
-   
-
 })
